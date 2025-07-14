@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sita & Ram's Wedding Invitation</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat:400,700&display=swap" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="bg-overlay"></div>
+    <main>
+        <nav class="main-nav" aria-label="Primary navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#our-story">Our Story</a></li>
+                <li><a href="#about-couple">About the Couple</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#ceremony">Ceremony</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+            </ul>
+        </nav>
+
+        <section id="home" class="hero-section card" tabindex="-1">
+            <header>
+                <h1>You're Invited!</h1>
+                <p class="couple-names">Sita& Ram</p>
+                <p class="tagline">Join us as we say "I do"</p>
+                <div id="countdown" aria-live="polite">
+                    <h2>Countdown to Our Big Day</h2>
+                    <div id="timer">Loading...</div>
+                </div>
+            </header>
+        </section>
+
+        <section id="our-story" class="card" tabindex="-1">
+            <h2>Our Story</h2>
+            <div class="story-cards">
+                <article class="story-card" tabindex="0">
+                    <h3>How We Met</h3>
+                    <p>We met in college, instantly connecting over our love for adventure and music. Our first conversation lasted hours, and from that day, our friendship blossomed into something beautiful.</p>
+                </article>
+                <article class="story-card" tabindex="0">
+                    <h3>The Proposal</h3>
+                    <p>On a golden evening atop our favorite hill, Liam surprised Emma with a heartfelt proposal as the sun set behind us. It was intimate, joyful, and perfectly us.</p>
+                </article>
+                <article class="story-card" tabindex="0">
+                    <h3>Our Journey</h3>
+                    <p>From road trips and late-night talks to building a life together, our journey has been filled with laughter, support, and endless love. We can’t wait for the next chapter.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="about-couple" class="card" tabindex="-1">
+            <h2>About the Couple</h2>
+            <div class="couple-cards">
+                <article class="person-card" tabindex="0">
+                    <div class="profile-pic-placeholder" aria-label="Photo of Emma, the Bride"></div>
+                    <h3>Sita <span>(Bride)</span></h3>
+                    <p class="role">Graphic Designer</p>
+                    <ul>
+                        <li><strong>Hobbies & Interests:</strong> Photography, Hiking, Reading, Cooking</li>
+                        <li><strong>Favorite Things:</strong> Sunset photography and cozy bookstore visits</li>
+                        <li><strong>Fun Fact:</strong> Has visited 15 countries and speaks 3 languages fluently</li>
+                    </ul>
+                    <blockquote>“Life is better when you're laughing together”</blockquote>
+                </article>
+                <article class="person-card" tabindex="0">
+                    <div class="profile-pic-placeholder" aria-label="Photo of Liam, the Groom"></div>
+                    <h3>Ram <span>(Groom)</span></h3>
+                    <p class="role">Software Engineer</p>
+                    <ul>
+                        <li><strong>Hobbies & Interests:</strong> Rock Climbing, Guitar, Gaming, Traveling</li>
+                        <li><strong>Favorite Things:</strong> Mountain adventures and live music concerts</li>
+                        <li><strong>Fun Fact:</strong> Built their first app together and can solve a Rubik's cube in under 2 minutes</li>
+                    </ul>
+                    <blockquote>“The best things in life are the people we love”</blockquote>
+                </article>
+            </div>
+        </section>
+
+        <section id="gallery" class="card" tabindex="-1">
+            <h2>Our Gallery</h2>
+            <div class="gallery-flex">
+                <figure tabindex="0" aria-label="Gallery image 1: A candid picnic moment in the park." data-caption="A candid picnic moment in the park.">
+                    <div class="gallery-img-placeholder"></div>
+                    <figcaption>A candid picnic moment in the park.</figcaption>
+                </figure>
+                <figure tabindex="0" aria-label="Gallery image 2: The proposal at sunset." data-caption="The proposal at sunset.">
+                    <div class="gallery-img-placeholder"></div>
+                    <figcaption>The proposal at sunset.</figcaption>
+                </figure>
+                <figure tabindex="0" aria-label="Gallery image 3: Traveling together in Paris." data-caption="Traveling together in Paris.">
+                    <div class="gallery-img-placeholder"></div>
+                    <figcaption>Traveling together in Paris.</figcaption>
+                </figure>
+                <figure tabindex="0" aria-label="Gallery image 4: Emma capturing the sunrise." data-caption="Emma capturing the sunrise.">
+                    <div class="gallery-img-placeholder"></div>
+                    <figcaption>Sita capturing the sunrise.</figcaption>
+                </figure>
+                <figure tabindex="0" aria-label="Gallery image 5: Liam playing guitar at a campfire." data-caption="Liam playing guitar at a campfire.">
+                    <div class="gallery-img-placeholder"></div>
+                    <figcaption>Ram playing guitar at a campfire.</figcaption>
+                </figure>
+            </div>
+            <!-- Modal for enlarged images (unchanged) -->
+            <div id="modal" aria-modal="true" role="dialog" tabindex="-1">
+                <button id="close-modal" aria-label="Close gallery view">&times;</button>
+                <img id="modal-img" src="#" alt="" />
+                <p id="modal-caption"></p>
+            </div>
+        </section>
+
+        <!-- Modal for enlarged images -->
+        <div id="modal" aria-modal="true" role="dialog" tabindex="-1">
+            <button id="close-modal" aria-label="Close gallery view">&times;</button>
+            <img id="modal-img" src="#" alt="" />
+            <p id="modal-caption"></p>
+        </div>
+        </section>
+
+        <section id="ceremony" class="card" tabindex="-1">
+            <h2>About the Ceremony</h2>
+            <p><strong>Date:</strong> December 31, 2025</p>
+            <p><strong>Time:</strong> 4:00 PM - 10:00 PM</p>
+            <p><strong>Venue:</strong> The Grand Garden Estate, 123 Wedding Lane, AndhraPradesh</p>
+
+            <h3>Wedding Plan Events</h3>
+            <ul>
+                <li>4:00 PM — Arrival & Welcome Drinks</li>
+                <li>4:30 PM — Ceremony Begins</li>
+                <li>5:30 PM — Cocktail Hour</li>
+                <li>6:30 PM — Reception & Dinner</li>
+                <li>8:00 PM — Dancing & Celebration</li>
+                <li>10:00 PM — Farewell</li>
+            </ul>
+
+            <h3>Dress Code</h3>
+            <p>Formal Attire. Please wear elegant evening wear. Soft pastels and floral prints are encouraged.</p>
+
+            <h3>Special Notes</h3>
+            <ul>
+                <li>Accessible parking and seating available.</li>
+                <li>Please RSVP by November 30, 2025.</li>
+                <li>Unplugged ceremony: Kindly silence devices and refrain from photography during the vows.</li>
+            </ul>
+        </section>
+
+        <section id="rsvp" class="card" tabindex="-1">
+            <h2>RSVP</h2>
+            <p>Kindly RSVP by November 30, 2025 so we can finalize our arrangements.</p>
+            <form id="rsvp-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true" />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true" />
+
+                <label for="attending">Will you attend?</label>
+                <select id="attending" name="attending" required aria-required="true">
+                    <option value="">Select an option</option>
+                    <option value="yes">Joyfully Accept</option>
+                    <option value="no">Regretfully Decline</option>
+                </select>
+
+                <label for="message">Message (optional):</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit">Submit RSVP</button>
+                <div class="thank-you" id="thank-you-msg" role="alert" aria-live="polite">Thank you for your response! We can't wait to celebrate with you!</div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
